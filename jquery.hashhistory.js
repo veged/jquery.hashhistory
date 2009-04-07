@@ -11,7 +11,7 @@
 (function($){
     var $document = $(document),
         iframe,
-        hash = '', // инициализируем пустым, чтобы учесть первоначальный хеш
+        hash, // инициализируем пустым, чтобы учесть первоначальный хеш
         // считаем, что только IE нужно насильно записывать хистори (остальные сами справляются)
         needHistoryAdd = /MSIE/.test(navigator.userAgent),
         afterHistoryRead = false,
